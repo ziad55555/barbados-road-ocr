@@ -1,0 +1,9 @@
+.DS_Store
+.venv/
+__pycache__/
+*.pyc
+images/
+images.zip
+artifacts/
+outputs/
+data/processed/
