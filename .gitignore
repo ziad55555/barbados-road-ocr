@@ -7,3 +7,8 @@ images.zip
 artifacts/
 outputs/
 data/processed/
+Train.csv
+Test.csv
+SampleSubmission.csv
+Starters.zip
+manifest-*.json
