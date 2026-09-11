@@ -22,6 +22,11 @@ def main() -> None:
         raise ValueError("Prediction columns must be exactly ID,Target")
     if prediction.ID.duplicated().any() or prediction.Target.eq("").any():
         raise ValueError("Predictions must have unique IDs and non-empty targets")
+    if "Target" not in reference.columns:
+        if len(prediction) != len(reference) or set(prediction.ID) != set(reference.ID):
+            raise ValueError("Prediction IDs do not match the test IDs exactly")
+        print(f"schema_ok rows={len(prediction)} ids_exact=True empty=0")
+        return
     merged = reference[["ID", "Target"]].merge(
         prediction, on="ID", how="left", validate="one_to_one", suffixes=("_ref", "_pred")
     )
