@@ -29,3 +29,7 @@ Les seeds NumPy et MLX sont fixées. Les checkpoints d'inférence sont append-on
 ## Limites connues
 
 Le score local ne garantit pas le score privé Zindi. La validation est un seul holdout et le modèle n'utilise pas de lexique ou de données historiques externes. Une amélioration ultérieure sûre serait un ensemble de seeds ou un reconnaisseur Kraken entraîné uniquement sur le train du challenge, comparé sur le même holdout.
+
+## Référence leaderboard
+
+Résultat communiqué après soumission : score Zindi `0.333014582`, WER pondéré `8.700753695`, CER pondéré `33.48994145`. Le score leaderboard doit être privilégié pour comparer les prochaines versions. Le score local et le score Zindi ne sont pas exprimés selon la même convention d'affichage.

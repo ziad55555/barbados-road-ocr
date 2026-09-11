@@ -51,3 +51,7 @@ Les images sont redimensionnées avec conservation du ratio à 1 024 px maximum 
 ## Licence et données
 
 Le code de ce dépôt peut être réutilisé sous MIT. Les données, images, archives, annotations, sorties et poids adaptés du challenge restent soumis aux conditions Zindi et doivent être obtenus et conservés séparément par le participant.
+
+## Résultat Zindi observé
+
+La soumission envoyée a obtenu le score leaderboard `0.333014582`, avec `WER Weighted = 8.700753695` et `CER Weighted = 33.48994145`. Ces valeurs constituent la référence réelle pour les prochaines itérations, distincte du score local de validation.
